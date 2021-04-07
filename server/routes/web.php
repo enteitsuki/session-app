@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('session', 'SessionController@index');
+Route::post('session', 'SessionController@store');
+Route::get('session/delete', 'SessionController@delete');
